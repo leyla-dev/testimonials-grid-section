@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+      <main class="container">
+        <div class="card card_1 bg-primary">
+          <div class="card-header">
+            <div class="flex-box">
+              <img class="border-primary" src="/images/image-daniel.jpg" alt="daniel">
+              <div>
+                <h2 class="name">Daniel Clifford</h2>
+                <p class="position">Verified Graduate</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="main-text">I received a job offer mid-course, and the subjects I learned were current, if not more so,
+            in the company I joined. I honestly feel I got every penny’s worth.</p>
+            <p class="text">
+                “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+                transition and have heard some people who had an amazing experience here. I signed up
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+                The next 12 weeks was the best - and most grueling - time of my life. Since completing
+                the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+            </p>
+          </div>
+        </div>
+        <div class="card card_2 bg-secondary">
+          <div class="card-header">
+            <div class="flex-box">
+              <img src="/images/image-jonathan.jpg" alt="jonathan">
+              <div>
+                <h2 class="name">Jonathan Walters</h2>
+                <p class="position">Verified Graduate</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="main-text">
+              The team was very supportive and kept me motivated
+            </p>
+            <p class="text">
+            “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+            for a big company. This was one of the best investments I’ve made in myself. ”
+            </p>
+          </div>
+        </div>
+     
+        <div class="card card_3">
+          <div class="card-header">
+            <div class="flex-box">
+              <img class="border-primary" src="/images/image-jeanette.jpg" alt="jeanette">
+              <div>
+                <h2 class="name">Jeanette Harmon</h2>
+                <p class="position">Verified Graduate</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="main-text">
+              An overall wonderful and rewarding experience
+            </p>
+            <p class="text">
+            “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+            while doing something I love. ”
+            </p>
+          </div>
+        </div>
+        <div class="card card_4 bg-dark">
+          <div class="card-header">
+            <div class="flex-box">
+              <img class="border-primary" src="/images/image-patrick.jpg" alt="patrick">
+              <div>
+                <h2 class="name">Patrick Abrams</h2>
+                <p class="position">Verified Graduate</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="main-text">
+              Such a life-changing experience. Highly recommended!
+            </p>
+            <p class="text">
+              “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+              professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+              student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+              did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+              project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+              could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+              experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+              100% recommend! ”
+            </p>
+          </div>
+        </div>
+          <div class="card card_5">
+            <div class="card-header">
+              <div class="flex-box">
+                <img class="border-primary" src="/images/image-kira.jpg" alt="kira">
+                <div>
+                  <h2 class="name">Kira Whittle</h2>
+                  <p class="position">Verified Graduate</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="main-text">
+                Such a life-changing experience. Highly recommended!
+              </p>
+              <p class="text">
+                “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+                professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+                student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+                did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+                project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+                could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+                experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+                100% recommend! ”
+              </p>
+            </div>
+          </div>
+      </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+body{
+font-size: 13px;
+}
+
+.container{
+margin: 40px;
+display: grid;
+gap: 10px;
+grid-template:
+'card_1 card_1 card_2 card_5'
+'card_3 card_4 card_4 card_5';
+}
+
+.card{
+border-radius: 10px;
+padding: 20px;
+}
+
+.card_1 {
+grid-area: card_1;
+}
+
+.card_2 {
+grid-area: card_2;
+}
+
+.card_3 {
+grid-area: card_3;
+}
+
+.card_4 {
+grid-area: card_4;
+}
+
+.card_5 {
+grid-area: card_5;
+}
+
+.bg-primary {
+background-color: #7541c8;
+color: #fff;
+}
+
+.card-header img{
+border-radius: 100%;
+width: 40px;
+margin-right: 5px;
+}
+
+.card-header .flex-box {
+display: flex;
+align-items: center;
+}
+
+.border-primary{
+border: 2px solid #a775f1;
+}
+.card-body{
+margin-top: 20px;
+}
+.card-body .main-text{
+margin-bottom: 10px;
+}
+.card-body .text {
+opacity: 0.3;
+}
+
+.bg-secondary{
+background-color: #48556a;
+color: #fff;
+}
+.bg-dark{
+background-color: #19212e;
+color: #fff;
+}
